@@ -1,0 +1,19 @@
+﻿<Window x:Class="Bracelet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bracelet"
+        mc:Ignorable="d"
+        Title="Bracelet" Height="440.646" Width="533.368" Background="White" Foreground="Black" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,2,0">
+        <TextBlock x:Name="textBlockLeftArm" HorizontalAlignment="Left" Height="146" Margin="10,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" IsEnabled="False"/>
+        <TextBlock x:Name="textBlockRightArm" HorizontalAlignment="Left" Height="146" Margin="10,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" IsEnabled="False"/>
+        <Label x:Name="label" Content="Количество (null = rand):" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Левая рука" HorizontalAlignment="Left" Margin="10,51,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="161,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69"/>
+        <CheckBox x:Name="checkBoxRightArm" Content="Правая рука" HorizontalAlignment="Left" Margin="10,233,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Сгенерировать" HorizontalAlignment="Left" Margin="361,16,0,0" VerticalAlignment="Top" Width="113" Click="button_Click"/>
+
+    </Grid>
+</Window>
