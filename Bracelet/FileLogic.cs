@@ -40,7 +40,7 @@ namespace Bracelet
 
             for (int i = 0; i < count; i++)
             {
-                int number = rnd.Next(0, bracelets.Count - 1);
+                int number = rnd.Next(0, bracelets.Count);
 
                 string bracelet = bracelets[number];
                 bracelets.RemoveAt(number);
