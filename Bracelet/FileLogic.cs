@@ -24,7 +24,11 @@ namespace Bracelet
             {
                 while (!reader.EndOfStream)
                 {
-                    answer.Add(reader.ReadLine());
+                    string str = reader.ReadLine();
+                    if (!str.StartsWith("//"))
+                    {
+                        answer.Add(str);
+                    }
                 }
             }
 
